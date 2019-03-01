@@ -129,6 +129,71 @@ body {
 .gallery {
   width: 100%;
   height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery__desc {
+  border: solid gray;
+  background: white;
+  border-radius: 2em;
+  padding: 1em;
+  width: 60vh;
+  height: 30vh;
+  z-index: 1;
+  position: relative;
+}
+
+.gallery__title {
+  text-align: center;
+  padding: 1em;
+  margin: 0;
+}
+
+.gallery__text {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery__btn {
+  margin-top: 1em;
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery__btnder {
+  width: 2em;
+  height: 1.5em;
+}
+
+.gallery__btnizq {
+  width: 2em;
+  height: 1.5em;
+  margin-right: 5em;
+}
+
+.gallery__photo {
+  margin-left: 3em;
+  z-index: -1;
+  background: violet;
+  border-radius: 2em;
+  width: 90vh;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .newsletter {
@@ -220,6 +285,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.interaction {
+  width: 100%;
+  height: 40vh;
 }
 
 .footer {

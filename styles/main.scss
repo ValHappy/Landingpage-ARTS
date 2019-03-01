@@ -114,6 +114,63 @@ body{
 .gallery{
     width: 100%;
     height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__desc{
+        border:solid gray;
+        background: white;
+        border-radius: 2em;
+        padding: 1em;
+        width: 60vh;
+        height: 30vh;
+        z-index: 1;
+        position: relative;
+    }
+    
+    &__title{
+        text-align: center;
+        padding: 1em;
+        margin: 0;
+    }
+    
+    &__text{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        
+    }
+    
+    &__btn{
+        margin-top: 1em;
+        padding: 0.5em;
+        display: flex;
+        justify-content: center;
+        
+        &der{
+            width: 2em;
+            height: 1.5em;
+        }
+        
+        &izq{
+            width: 2em;
+            height: 1.5em;
+            margin-right: 5em;
+        }
+    }
+    
+    &__photo{
+        margin-left: 3em;
+        z-index: -1;
+        background: violet;
+        border-radius: 2em;
+        width: 90vh;
+        height: 50vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
 }
 
 .newsletter{
@@ -157,7 +214,7 @@ body{
         border-radius:50px;
         border: solid $color-orange;
         overflow:hidden;
-
+        
         &:hover{
             border: solid $color-orange-press;
         }
@@ -174,12 +231,12 @@ body{
         background: $color-orange;
         color:#fff;
         cursor:pointer;	
-
+        
         &:hover {
             background:$color-orange-press;
         }
     }
-
+    
     &__input{
         padding:14px 2px;
         width:90%;
@@ -205,6 +262,11 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.interaction{
+    width: 100%;
+    height: 40vh;
 }
 
 .footer{
