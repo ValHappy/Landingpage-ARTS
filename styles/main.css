@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 68px;
+  -ms-flex-preferred-size: 68px;
+      flex-basis: 68px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.menu__logo {
+  width: 10%;
+  margin: 0;
+  padding: .7em;
+  margin-left: 2em;
+}
+
+.menu__list {
+  list-style-type: none;
+  margin: 0;
+  margin-left: 7em;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu__item {
+  float: left;
+  padding: 0 5em 0 5em;
+}
+
+.menu__item a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1.5em;
+  text-decoration: none;
+}
+
+.menu__item a:hover {
+  color: #5632AC;
+}
+
+.banner {
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  background-size: cover;
+}
+
+.benefit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 600px;
+      flex-basis: 600px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #5632AC;
+}
+
+.benefit__desc {
+  margin: 2em 2em 0 2em;
+  max-width: 1000px;
+  padding: 2em;
+  text-align: center;
+  color: white;
+}
+
+.benefit__feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature {
+  width: 14%;
+  margin: 0 50px 0 50px;
+}
+
+.feature__img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 160px;
+}
+
+.feature__title {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.feature__info {
+  color: white;
+  text-align: center;
+}
+
+.gallery {
+  width: 100%;
+  height: 80vh;
+}
+
+.newsletter {
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.newsletter__info {
+  width: 30%;
+  color: white;
+  margin: auto;
+}
+
+.newsletter__titulo {
+  width: 50%;
+  margin-left: 30%;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.newsletter__desc {
+  text-align: center;
+  width: 90%;
+  color: white;
+  font-size: 20px;
+}
+
+.newsletter__action {
+  width: 40%;
+  height: 40%;
+  margin: auto;
+}
+
+.newsletter__form {
+  margin: auto;
+  position: relative;
+  width: 65%;
+  background: white;
+  border-radius: 50px;
+  border: solid #F57420;
+  overflow: hidden;
+}
+
+.newsletter__form:hover {
+  border: solid #eb6105;
+}
+
+.newsletter__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  padding: 17px;
+  border: none;
+  font-weight: bold;
+  background: #F57420;
+  color: #fff;
+  cursor: pointer;
+}
+
+.newsletter__btn:hover {
+  background: #eb6105;
+}
+
+.newsletter__input {
+  padding: 14px 2px;
+  width: 90%;
+  margin: 0 5%;
+  font-size: 17px;
+  border-radius: 50px;
+  border: none;
+  background: white;
+}
+
+.product {
+  width: 100%;
+  height: 80vh;
+}
+
+.parallax {
+  background-image: url(https://tecnos.com.co/images/banners/tecnos_banner.jpg);
+  min-height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: 1em auto;
+  margin-top: 3em;
+}
+
+.footer__follow {
+  float: left;
+  padding: 2em;
+}
+
+.footer__titulo {
+  display: inline;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 1.2em;
+  font-weight: lighter;
+  vertical-align: middle;
+}
+
+.footer__red {
+  width: 2em;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.footer__red:hover {
+  opacity: 0.5;
+}
+
+.footer__copy a {
+  color: #3c948b;
+  text-decoration: none;
+  padding: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.footer__menu {
+  float: right;
+  width: 40%;
+  margin: 0;
+}
+
+.footer__lista {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 4.5%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.footer__item {
+  padding: 1em;
+  float: left;
+  font-size: 1em;
+}
+
+.footer__item a {
+  color: #3c948b;
+  text-decoration: none;
+  padding: 0;
+  text-align: right;
+}
+
+.footer__item a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=main.css.map */
