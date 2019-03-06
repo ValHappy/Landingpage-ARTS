@@ -33,14 +33,13 @@ body {
 .menu__list {
   list-style-type: none;
   margin: 0;
-  margin-left: 7em;
   padding: 0;
   overflow: hidden;
 }
 
 .menu__item {
   float: left;
-  padding: 0 5em 0 5em;
+  padding: 0 3em 0 3em;
 }
 
 .menu__item a {
@@ -276,6 +275,22 @@ body {
 .product {
   width: 100%;
   height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__desc {
+  width: 50%;
+  height: 80vh;
+  background: rebeccapurple;
+}
+
+.product__img {
+  width: 50%;
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .parallax {
@@ -289,7 +304,29 @@ body {
 
 .interaction {
   width: 100%;
-  height: 40vh;
+  height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.interaction__img {
+  width: 50%;
+  height: 95vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.interaction__img:hover {
+  background: rebeccapurple;
+  background-image: url(img/paisajeart.png);
+}
+
+.interaction__desc {
+  background: red;
+  width: 50%;
+  height: 95vh;
 }
 
 .footer {
@@ -361,5 +398,56 @@ body {
 
 .footer__item a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1466px) {
+  .benefit {
+    background: red;
+  }
+  .menu__item {
+    padding: 0 2.5em 0 2.5em;
+  }
+}
+
+@media (max-width: 1375px) {
+  .benefit {
+    background: lavender;
+  }
+  .menu {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1295px) {
+  .benefit {
+    background: blue;
+  }
+  .menu__item {
+    padding: 0 2em 0 2em;
+  }
+}
+
+@media (max-width: 1203px) {
+  .benefit {
+    background: lightblue;
+  }
+  .menu__item {
+    padding: 0 1.5em 0 1.5em;
+  }
+}
+
+@media (max-width: 1115px) {
+  .benefit {
+    background: lightcoral;
+  }
+  .menu {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1055px) {
+  .benefit {
+    background: lightgreen;
+  }
 }
 /*# sourceMappingURL=main.css.map */
