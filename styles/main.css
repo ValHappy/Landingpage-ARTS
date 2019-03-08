@@ -274,6 +274,7 @@ body {
   width: 100%;
   height: 50vh;
   background-size: cover;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -678,6 +679,77 @@ body {
     z-index: 0;
     width: 45vh;
     height: 30vh;
+  }
+  .newsletter {
+    height: 35vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url("../img/newcolor.png");
+  }
+  .newsletter__titulo {
+    font-size: 18px;
+  }
+  .newsletter__desc {
+    font-size: 12px;
+  }
+  .newsletter__action {
+    width: 45%;
+    margin: auto;
+  }
+  .newsletter__btn {
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 8px;
+  }
+  .newsletter__input {
+    padding: 5px 1px;
+  }
+  .product {
+    height: 72vh;
+  }
+  .product__title {
+    font-size: 16px;
+  }
+  .product__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product__desc {
+    width: 100%;
+  }
+  .product__tabla {
+    font-size: 12px;
+    margin: auto;
+    margin-top: 2em;
+  }
+  .product__img {
+    margin-top: 1em;
+    width: 100%;
+    height: 10vh;
+    background-size: cover;
+  }
+  .interaction {
+    width: 100%;
+    height: 95vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .interaction__img {
+    width: 50%;
+    height: 95vh;
+    background-image: url("../img/paisaje.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .interaction__desc {
+    width: 50%;
+    height: 95vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
