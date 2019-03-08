@@ -558,10 +558,6 @@ body{
         font-size: 9px;
     }
     
-    .benefit{
-        background: rgb(232, 238, 144);
-    }
-    
     .menu{ 
         height: 60px;
         flex-basis: 60px;
@@ -584,7 +580,7 @@ body{
     .menu__nav a:not(:first-child) {
         display: none;
     }
-
+    
     .menu__nav a.icon {
         float: right;
         display: block;
@@ -609,20 +605,96 @@ body{
         height: 50vh;
         background-position: left;
     }
-
+    
     .benefit{
-
+        &__desc{
+            font-size: 12px;
+        }
+        
+        &__feature {
+            flex-direction: column;
+        }
     }
-
+    
+    
+    .feature{
+        width: 100%;
+        margin: 0;
+        
+        &__img {
+            height: 100px;
+            background: rebeccapurple;
+        }
+        
+        &__title{
+            font-size: 16px;
+        }
+        
+        &__info {
+            font-size: 12px;
+        }
+    }
+    
     .gallery{
-
+        width: 80%;
+        height: 80vh;
+        
+        &__title{
+            font-size: 16px;
+        }
+        
+        &__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        &__desc{
+            top: 20px;
+            left: 6%;
+            position: static;
+            z-index: 0;
+        }
+        
+        &__info{
+            width: 30vh;
+            height: 16vh;
+            border-width: 0.5px;
+           
+        }
+        
+        &__subtitle{
+            text-align: center;
+            padding: 0.5em;
+            margin: 0;
+            font-family: 'Homemade Apple', cursive;
+            font-size: 16px
+        }
+        
+        &__text{
+            font-size: 12px;
+        }
+        
+        
+        &__photo{
+            margin: 0;
+            z-index: 0;
+            width: 45vh;
+            height: 30vh;
+            
+        } 
     }
-
+    
     .newsletter{
-
+        
     }
-
+    
     .product{
+        
+    }
+    
+    .parallax{
         
     }
 }

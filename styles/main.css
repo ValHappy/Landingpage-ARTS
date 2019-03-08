@@ -582,9 +582,6 @@ body {
   .body {
     font-size: 9px;
   }
-  .benefit {
-    background: #e8ee90;
-  }
   .menu {
     height: 60px;
     -ms-flex-preferred-size: 60px;
@@ -624,6 +621,78 @@ body {
   .banner {
     height: 50vh;
     background-position: left;
+  }
+  .benefit__desc {
+    font-size: 12px;
+  }
+  .benefit__feature {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feature {
+    width: 100%;
+    margin: 0;
+  }
+  .feature__img {
+    height: 100px;
+    background: rebeccapurple;
+  }
+  .feature__title {
+    font-size: 16px;
+  }
+  .feature__info {
+    font-size: 12px;
+  }
+  .gallery {
+    width: 80%;
+    height: 80vh;
+  }
+  .gallery__title {
+    font-size: 16px;
+  }
+  .gallery__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gallery__desc {
+    top: 20px;
+    left: 6%;
+    position: static;
+    z-index: 0;
+  }
+  .gallery__info {
+    width: 30vh;
+    height: 16vh;
+    border-width: 0.5px;
+  }
+  .gallery__subtitle {
+    text-align: center;
+    padding: 0.5em;
+    margin: 0;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 16px;
+  }
+  .gallery__text {
+    font-size: 12px;
+  }
+  .gallery__photo {
+    margin: 0;
+    z-index: 0;
+    width: 45vh;
+    height: 30vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
