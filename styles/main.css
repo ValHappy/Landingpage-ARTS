@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Comfortaa', cursive;
+  font-size: 16px;
 }
 
 .menu {
@@ -18,9 +19,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: white;
   font-size: 17px;
   font-weight: bold;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .menu__logo {
@@ -42,6 +44,10 @@ body {
   padding: 0 3em 0 3em;
 }
 
+.menu__item .icon {
+  display: none;
+}
+
 .menu__item a {
   display: block;
   color: black;
@@ -58,6 +64,9 @@ body {
   width: 100%;
   height: 80vh;
   text-align: center;
+  background-image: url("../img/art_banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -117,7 +126,8 @@ body {
 .feature__title {
   color: white;
   text-align: center;
-  font-weight: bold;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 18px;
 }
 
 .feature__info {
@@ -125,9 +135,24 @@ body {
   text-align: center;
 }
 
+.gallery-ppal {
+  width: 100%;
+  height: 75vh;
+}
+
 .gallery {
   width: 100%;
   height: 80vh;
+}
+
+.gallery__title {
+  margin-top: 3em;
+  text-align: center;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 32px;
+}
+
+.gallery__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,20 +165,30 @@ body {
 }
 
 .gallery__desc {
-  border: solid gray;
-  background: white;
-  border-radius: 2em;
-  padding: 1em;
-  width: 60vh;
-  height: 30vh;
-  z-index: 1;
+  top: 20px;
+  left: 6%;
   position: relative;
+  z-index: 1;
 }
 
-.gallery__title {
+.gallery__info {
+  position: relative;
+  width: 50vh;
+  height: 25vh;
+  border: solid #c5c5c5;
+  background: white;
+  border-radius: 2em;
+  border-width: 1px;
+  padding: 1em;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.gallery__subtitle {
   text-align: center;
   padding: 1em;
   margin: 0;
+  font-family: 'Homemade Apple', cursive;
 }
 
 .gallery__text {
@@ -165,6 +200,7 @@ body {
 .gallery__btn {
   margin-top: 1em;
   padding: 0.5em;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,20 +210,59 @@ body {
 }
 
 .gallery__btnder {
+  font-size: 20px;
   width: 2em;
   height: 1.5em;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery__btnder:hover {
+  color: #F57420;
+  transition: color 0.3s;
+  /* vendorless fallback */
+  -o-transition: color 0.3s;
+  /* opera */
+  -ms-transition: color 0.3s;
+  /* IE 10 */
+  -moz-transition: color 0.3s;
+  /* Firefox */
+  -webkit-transition: color 0.3s;
+  /*safari and chrome */
 }
 
 .gallery__btnizq {
+  font-size: 20px;
   width: 2em;
   height: 1.5em;
   margin-right: 5em;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery__btnizq:hover {
+  color: #F57420;
+  transition: color 0.3s;
+  /* vendorless fallback */
+  -o-transition: color 0.3s;
+  /* opera */
+  -ms-transition: color 0.3s;
+  /* IE 10 */
+  -moz-transition: color 0.3s;
+  /* Firefox */
+  -webkit-transition: color 0.3s;
+  /*safari and chrome */
 }
 
 .gallery__photo {
   margin-left: 3em;
   z-index: -1;
-  background: violet;
   border-radius: 2em;
   width: 90vh;
   height: 50vh;
@@ -202,6 +277,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url("../img/newcolor.png");
 }
 
 .newsletter__info {
@@ -214,8 +290,9 @@ body {
   width: 50%;
   margin-left: 30%;
   color: white;
-  font-weight: bold;
   font-size: 35px;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 32px;
 }
 
 .newsletter__desc {
@@ -260,6 +337,16 @@ body {
 
 .newsletter__btn:hover {
   background: #eb6105;
+  transition: background 0.5s;
+  /* vendorless fallback */
+  -o-transition: background 0.5s;
+  /* opera */
+  -ms-transition: background 0.5s;
+  /* IE 10 */
+  -moz-transition: background 0.5s;
+  /* Firefox */
+  -webkit-transition: background 0.5s;
+  /*safari and chrome */
 }
 
 .newsletter__input {
@@ -275,6 +362,18 @@ body {
 .product {
   width: 100%;
   height: 80vh;
+}
+
+.product__title {
+  text-align: center;
+  margin-top: 1em;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 32px;
+}
+
+.product__container {
+  width: 100%;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,18 +382,35 @@ body {
 .product__desc {
   width: 50%;
   height: 80vh;
-  background: rebeccapurple;
+}
+
+.product__tabla {
+  margin: auto;
+  margin-top: 2em;
+  width: 65%;
+  border-collapse: collapse;
+  border: 0.1em solid #f9f9f9;
+}
+
+.product td, .product th {
+  text-align: left;
+  padding: 0.8em;
+}
+
+.product tr:nth-child(odd) {
+  background-color: #f9f9f9;
 }
 
 .product__img {
-  width: 50%;
-  height: 80vh;
+  width: 45%;
+  background-image: url("../img/touch.jpg");
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .parallax {
-  background-image: url(https://tecnos.com.co/images/banners/tecnos_banner.jpg);
+  background-image: url(https://tecnos.com.co/images/banners/tecnos_cappuccino.jpg);
   min-height: 700px;
   background-attachment: fixed;
   background-position: center;
@@ -313,24 +429,43 @@ body {
 .interaction__img {
   width: 50%;
   height: 95vh;
-  background-size: cover;
+  background-image: url("../img/paisaje.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 0.5s;
+  /* vendorless fallback */
+  -o-transition: background-image 0.5s;
+  /* opera */
+  -ms-transition: background-image 0.5s;
+  /* IE 10 */
+  -moz-transition: background-image 0.5s;
+  /* Firefox */
+  -webkit-transition: background-image 0.5s;
+  /*safari and chrome */
 }
 
 .interaction__img:hover {
-  background: rebeccapurple;
-  background-image: url(img/paisajeart.png);
+  background-image: url("../img/paisajeart.png");
+  transition: background-image 0.5s;
+  /* vendorless fallback */
+  -o-transition: background-image 0.5s;
+  /* opera */
+  -ms-transition: background-image 0.5s;
+  /* IE 10 */
+  -moz-transition: background-image 0.5s;
+  /* Firefox */
+  -webkit-transition: background-image 0.5s;
+  /*safari and chrome */
 }
 
 .interaction__desc {
-  background: red;
   width: 50%;
   height: 95vh;
 }
 
 .footer {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 1em auto;
   margin-top: 3em;
 }
@@ -340,7 +475,7 @@ body {
   padding: 2em;
 }
 
-.footer__titulo {
+.footer____titulo {
   display: inline;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -349,29 +484,9 @@ body {
   vertical-align: middle;
 }
 
-.footer__red {
-  width: 2em;
-  margin: 0;
-  vertical-align: middle;
-}
-
-.footer__red:hover {
-  opacity: 0.5;
-}
-
-.footer__copy a {
-  color: #3c948b;
-  text-decoration: none;
-  padding: 0;
-}
-
-.clearfix {
-  clear: both;
-}
-
 .footer__menu {
   float: right;
-  width: 40%;
+  width: 50%;
   margin: 0;
 }
 
@@ -390,7 +505,7 @@ body {
 }
 
 .footer__item a {
-  color: #3c948b;
+  color: #5632AC;
   text-decoration: none;
   padding: 0;
   text-align: right;
@@ -416,6 +531,15 @@ body {
   .menu {
     font-size: 16px;
   }
+  .newsletter__titulo {
+    font-size: 33px;
+  }
+  .newsletter__desc {
+    font-size: 18px;
+  }
+  .product__tabla {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 1295px) {
@@ -434,6 +558,15 @@ body {
   .menu__item {
     padding: 0 1.5em 0 1.5em;
   }
+  .feature {
+    font-size: 15px;
+  }
+  .feature__desc {
+    font-size: 14px;
+  }
+  .product__img {
+    background-size: contain;
+  }
 }
 
 @media (max-width: 1115px) {
@@ -445,9 +578,52 @@ body {
   }
 }
 
-@media (max-width: 1055px) {
+@media (max-width: 400px) {
+  .body {
+    font-size: 9px;
+  }
   .benefit {
-    background: lightgreen;
+    background: #e8ee90;
+  }
+  .menu {
+    height: 60px;
+    -ms-flex-preferred-size: 60px;
+        flex-basis: 60px;
+  }
+  .menu__logo {
+    width: 25%;
+  }
+  .menu__item .icon {
+    width: 20%;
+    float: right;
+    display: block;
+  }
+  .menu__item a {
+    display: none;
+  }
+  .menu__nav a:not(:first-child) {
+    display: none;
+  }
+  .menu__nav a.icon {
+    float: right;
+    display: block;
+  }
+  .menu__nav.responsive {
+    position: relative;
+  }
+  .menu__nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu__nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .banner {
+    height: 50vh;
+    background-position: left;
   }
 }
 /*# sourceMappingURL=main.css.map */
