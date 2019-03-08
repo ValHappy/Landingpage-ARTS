@@ -635,25 +635,19 @@ body{
         }
     }
     
-    .gallery{
-        width: 80%;
-        height: 80vh;
-        
+    .gallery{     
         &__title{
             font-size: 16px;
         }
         
         &__container{
-            display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
         
         &__desc{
-            top: 20px;
-            left: 6%;
-            position: static;
+            top: 0;
+            left: 0;
+            position: none;
             z-index: 0;
         }
         
@@ -661,33 +655,30 @@ body{
             width: 30vh;
             height: 16vh;
             border-width: 0.5px;
-           
         }
         
         &__subtitle{
-            text-align: center;
             padding: 0.5em;
             margin: 0;
-            font-family: 'Homemade Apple', cursive;
-            font-size: 16px
+            font-size: 14px;
         }
         
         &__text{
             font-size: 12px;
         }
         
-        
         &__photo{
             margin: 0;
             z-index: 0;
             width: 45vh;
             height: 30vh;
-            
         } 
     }
     
     .newsletter{
-        
+        &__titulo{
+            
+        }
     }
     
     .product{
