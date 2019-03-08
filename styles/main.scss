@@ -751,3 +751,26 @@ body{
         }
     }
 }
+
+@media (max-width: 300px){
+    .gallery{     
+        &__title{
+            font-size: 12px;
+        }
+        
+        &__container{
+            flex-direction: column;
+        }
+        
+        &__subtitle{
+            padding: 0;
+            margin: 0;
+            font-size: 12px;
+        }
+        
+        &__text{
+            font-size: 12px;
+        }
+        
+    }
+}
