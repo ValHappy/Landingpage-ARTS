@@ -571,7 +571,7 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 360px) {
   .body {
     font-size: 9px;
   }
